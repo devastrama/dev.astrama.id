@@ -22,6 +22,23 @@
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/atropos.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+    /* Membuat logo menjadi putih terang dan sedikit transparan saat diam */
+    .creative-brand-item img {
+        filter: brightness(0) invert(1);
+        opacity: 0.7;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+    }
+
+    /* Mengembalikan ke warna asli dan ukuran penuh saat mouse diarahkan (hover) */
+    .creative-brand-item img:hover {
+        filter: none;
+        opacity: 1;
+        transform: scale(1.05); /* Sedikit efek membesar agar lebih interaktif */
+    }
+    </style>
     <!-- CSS here -->
     <!-- CSS here -->
 
@@ -752,7 +769,7 @@
                 <!-- about area end -->
 
                 <!-- brand area start -->
-                <div class="creative-brand-area pb-80 fix">
+                <div class="creative-brand-area pb-80 fix" style="background-color: #2A4C3A;">
                     <div class="creative-brand-wrapper">
                         <div class="swiper-container creative-brand-active">
                             <div class="swiper-wrapper slider-transtion">
