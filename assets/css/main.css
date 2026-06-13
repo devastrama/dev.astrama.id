@@ -8695,19 +8695,24 @@ body.tp-magic-cursor #magic-cursor {
     flex-wrap: wrap;
   }
 }
+/* Untuk semua layar (Desktop, Tablet, Mobile) */
 .crp-blog-content {
-  margin-left: 55px;
+  margin-left: 0;
+  text-align: left; /* Tambahan untuk memastikan teks di dalamnya juga rata kiri */
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .crp-blog-content {
     margin-left: 40px;
   }
 }
+/* Mengatur jarak atas khusus untuk layar HP (Mobile) */
 @media (max-width: 767px) {
   .crp-blog-content {
-    margin-left: 0;
+    margin-top: 30px;
   }
 }
+
 @media (max-width: 767px) {
   .crp-blog-content {
     margin-top: 30px;
